@@ -1,12 +1,11 @@
----
-version: "3"
+
 services:
  devopsdb:
    image: charan8215/automation:db
    ports:
      - "3306:3306"
    deploy:
-     repilcas: 3
+     repilcas: 1
  application:
    image: charan8215/automation:app
    ports:
