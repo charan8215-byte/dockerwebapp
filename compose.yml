@@ -8,7 +8,7 @@ services:
    deploy:
      repilcas: 3
  application:
-   image: charan8215/harikanew:app
+   image: charan8215/automation:app
    ports:
      - "1111:8080"
    deploy:
