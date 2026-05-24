@@ -1,17 +1,14 @@
-
 services:
- devopsdb:
-   image: charan8215/automation:db
-   ports:
-     - "3306:3306"
-   deploy:
-     repilcas: 1
- application:
-   image: charan8215/automation:app
-   ports:
-     - "1111:8080"
-   deploy:
-     repilcas: 3
-   depends_on:
-     - "devopsdb"
-     
+  devopsdb:
+    image: charan8215/automation:db
+    ports:
+      - "3306:3306"
+    deploy:
+      replicas: 1
+
+  application:
+    image: charan8215/automation:app
+    ports:
+      - "2222:8080"
+    deploy:
+      replicas: 3
